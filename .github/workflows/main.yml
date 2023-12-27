@@ -2,8 +2,11 @@
 name: Auto-generate singbox rule_set binary
 on:
   push:
-    branches: [main]
-    paths: [.github/workflows/**]
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/**'
+      - '**.sh'
   schedule:
     - cron: 0 * * * *
   workflow_dispatch:
@@ -24,17 +27,11 @@ jobs:
         run: |
           chmod +x makefile.sh
           bash ./makefile.sh
-      - name: Install singbox
-        shell: bash
-        run: |
-          curl -SsLO https://github.com/SagerNet/sing-box/releases/download/v1.8.0-beta.6/sing-box-1.8.0-beta.6-linux-amd64.tar.gz
-          chmod +x sing-box-1.8.0-beta.6-linux-amd64.tar.gz
-          tar -xvzf sing-box-1.8.0-beta.6-linux-amd64.tar.gz
       - name: Generate singbox rule_set binary
         shell: bash
         run: |
-          chmod +x sing-box-1.8.0-beta.6-linux-amd64/sing-box
-          ./sing-box-1.8.0-beta.6-linux-amd64/sing-box rule-set compile --output option/hostsVN-singbox-rule.srs option/hostsVN-singbox-rule.json
+          chmod +x get_singbox.sh
+          bash ./get_singbox.sh
       - name: Generate date
         run: echo "DATE=$(TZ='Asia/Ho_Chi_Minh' date +"%Y.%m.%d-%H.%M.%S")" >> $GITHUB_ENV
       - name: Commit singbox rule_set
@@ -50,4 +47,4 @@ jobs:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
           retain_days: 0
-          keep_minimum_runs: 4
+          keep_minimum_runs: 2
