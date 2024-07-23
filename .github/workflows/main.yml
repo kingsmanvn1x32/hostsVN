@@ -35,7 +35,7 @@ jobs:
       - name: Generate date
         run: echo "DATE=$(TZ='Asia/Ho_Chi_Minh' date +"%Y.%m.%d-%H.%M.%S")" >> $GITHUB_ENV
       - name: Commit singbox rule_set
-        uses: EndBug/add-and-commit@v9.1.1
+        uses: EndBug/add-and-commit@v9
         with:
           add: option/hostsVN-singbox-rule.srs
           default_author: github_actor
