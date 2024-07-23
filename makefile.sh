@@ -86,7 +86,16 @@ echo '{
   "rules": [
     {
       "domain": [' >option/hostsVN-singbox-rule.json
-cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | grep -v '!' | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed -e 's/\n//gm' | sed '$ s/,$//' >>option/hostsVN-singbox-rule.json
+cat tmp/exceptions.tmp | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed -e 's/\n//gm' | sed '$ s/,$//' >>option/hostsVN-singbox-rule.json
+echo '      ],
+      "domain_suffix": [' >>option/hostsVN-singbox-rule.json
+cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed -e 's/\n//gm' | sed '$ s/,$//' >>option/hostsVN-singbox-rule.json
+echo '      ],
+      "domain_keyword": [' >>option/hostsVN-singbox-rule.json
+cat source/config-rule.txt | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed -e 's/\n//gm' | sed '$ s/,$//' >>option/hostsVN-singbox-rule.json
+echo '      ],
+      "domain_regex": [' >>option/hostsVN-singbox-rule.json
+cat source/config-rewrite.txt | grep -v '#' | grep -v -e '^[[:space:]]*$' | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed -e 's/\n//gm' | sed -e '$ s/,$//' | sed -e 's/\//\\\//gm' | sed -e 's/\\/\\\\/gm' >>option/hostsVN-singbox-rule.json
 echo '      ]
     }
   ]
