@@ -57,6 +57,11 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge.
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-shadowrocket.conf
 ```
 
+- Với ứng dụng Sing-box sử dụng đường dẫn [dưới đây](https://github.com/kingsmanvn1x32/hostsVN/raw/master/option/hostsVN-singbox-rule.srs):
+```
+https://github.com/kingsmanvn1x32/hostsVN/raw/master/option/hostsVN-singbox-rule.srs
+```
+
 - Với ứng dụng [Quantumult X](https://github.com/bigdargon/hostsVN/wiki/Quantumult-X) sử dụng đường dẫn [dưới đây](https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumultX.conf):
 ```
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumultX.conf
