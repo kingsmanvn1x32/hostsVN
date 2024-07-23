@@ -86,7 +86,7 @@ echo '{
   "rules": [
     {
       "domain": [' >option/hostsVN-singbox-rule.json
-cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | grep -v '!' | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed '$ s/,$//' >>option/hostsVN-singbox-rule.json
+cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | grep -v '!' | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed -e 's/\n//gm' | sed '$ s/,$//' >>option/hostsVN-singbox-rule.json
 echo '      ]
     }
   ]
@@ -125,4 +125,5 @@ rm -rf source/*.tmp
 echo "Checking duplicate..."
 sort option/domain.txt | uniq -d
 sort filters/adservers-all.txt | uniq -d
-read -p "Completed! Press enter to close"
+# read -p "Completed! Press enter to close"
+echo "Completed!"
