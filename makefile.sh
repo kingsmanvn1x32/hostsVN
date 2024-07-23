@@ -37,7 +37,10 @@ cat source/adservers-extra.txt | grep -v '!' | awk '{print $1}' >>tmp/adservers-
 cat source/exceptions.txt | grep -v '!' | awk '{print $1}' >>tmp/exceptions.tmp
 
 echo 'payload:' >option/hostsVN-clash-rule.yaml
-cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | awk '{print "  - \047+."$1"\047"}' >>option/hostsVN-clash-rule.yaml
+cat tmp/exceptions.tmp | awk '{print "  - DOMAIN, "$1""}' >>option/hostsVN-clash-rule.yaml
+cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | awk '{print "  - DOMAIN-SUFFIX, "$1""}' >>option/hostsVN-clash-rule.yamL
+cat source/config-rule.txt | awk '{print "  - DOMAIN-KEYWORD, "$1""}' >>option/hostsVN-clash-rule.yaml
+cat source/config-rewrite.txt | awk '{print "  - DOMAIN-REGEX, "$1""}' >>option/hostsVN-clash-rule.yaml
 
 echo '{
   "version": 2,
