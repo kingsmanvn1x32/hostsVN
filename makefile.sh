@@ -40,7 +40,8 @@ echo 'payload:' >option/hostsVN-clash-rule.yaml
 cat tmp/exceptions.tmp | awk '{print "  - DOMAIN,"$1}' | sed -e 's///gm' >>option/hostsVN-clash-rule.yaml
 cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | awk '{print "  - DOMAIN-SUFFIX,"$1}' | sed -e 's///gm' >>option/hostsVN-clash-rule.yaml
 cat source/config-rule.txt | awk '{print "  - DOMAIN-KEYWORD,"$1}' | sed -e 's///gm' >>option/hostsVN-clash-rule.yaml
-cat source/config-rewrite.txt | grep -v '#' | grep -v -e '^[[:space:]]*$' | awk '{print "  - DOMAIN-REGEX,"$1}' | sed -e 's///gm' >>option/hostsVN-clash-rule.yaml
+cat option/hostsVN-clash-rule.yaml >option/hostsVN-clash-rule-rewrite.yaml
+cat source/config-rewrite.txt | grep -v '#' | grep -v -e '^[[:space:]]*$' | awk '{print "  - DOMAIN-REGEX,"$1}' | sed -e 's///gm' >>option/hostsVN-clash-rule-rewrite.yaml
 
 echo '{
   "version": 2,

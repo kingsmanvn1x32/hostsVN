@@ -88,10 +88,10 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 https://github.com/kingsmanvn1x32/hostsVN/raw/master/option/hostsVN-singbox-rule.srs
 ```
 
-- Với ứng dụng Clash Meta for Android sử dụng đường dẫn [dưới đây](https://github.com/kingsmanvn1x32/hostsVN/raw/master/option/hostsVN-clash-rule.yaml):
+- Với ứng dụng Clash Meta for Android sử dụng đường dẫn [dưới đây](https://github.com/kingsmanvn1x32/hostsVN/raw/master/option/hostsVN-clash-rule.mrs):
 
 ```
-https://github.com/kingsmanvn1x32/hostsVN/raw/master/option/hostsVN-clash-rule.yaml
+https://github.com/kingsmanvn1x32/hostsVN/raw/master/option/hostsVN-clash-rule.mrs
 ```
 
 - Với các máy Android chưa root, sử dụng đường dẫn [dưới đây](https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts) cho một số ứng dụng như [Blokada](https://github.com/blokadaorg/blokada), [DNS66](https://github.com/julian-klode/dns66/), [Nebulo](https://github.com/Ch4t4r/Nebulo), [RethinkDNS + Firewall](https://github.com/celzero/rethink-app), [Virtual Hosts](https://play.google.com/store/apps/details?id=com.github.xfalcon.vhosts):
