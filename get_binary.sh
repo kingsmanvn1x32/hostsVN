@@ -10,6 +10,8 @@ tar -xzvf $singbox_namezip
 chmod +x $singbox_path
 $singbox_path rule-set compile --output option/hostsVN-singbox-rule.srs option/hostsVN-singbox-rule.json
 
+$singbox_path rule-set compile --output option/Advertising_Domain.srs option/Advertising_Domain.json
+
 clash_url=$(curl -s "https://api.github.com/repos/MetaCubeX/mihomo/releases" | grep -o -m 1 '"browser_download_url":\s"http[^"]*mihomo-linux-amd64-compatible-go.*-alpha-.*\.gz' | sed -r 's/"browser_download_url":\s"//')
 clash_url=$(echo -e "${clash_url}" | tr -d '[:space:]')
 echo "clash_url: $clash_url"
@@ -21,3 +23,5 @@ chmod +x $clash_namezip
 gzip -d $clash_namezip
 chmod +x $clash_path
 $clash_path convert-ruleset domain yaml option/hostsVN-clash-rule.yaml option/hostsVN-clash-rule.mrs
+
+$clash_path convert-ruleset domain yaml option/Advertising_Domain.yaml option/Advertising_Domain.mrs

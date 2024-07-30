@@ -36,6 +36,8 @@ cat source/adservers-all.txt source/adserver-all.tmp | grep -v '!' | awk '{print
 cat source/adservers-extra.txt | grep -v '!' | awk '{print $1}' >>tmp/adservers-extra.tmp
 cat source/exceptions.txt | grep -v '!' | awk '{print $1}' >>tmp/exceptions.tmp
 
+curl -o option/Advertising_Domain.yaml -sSL https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Advertising/Advertising_Domain.yaml
+
 echo 'payload:' >option/hostsVN-clash-rule.yaml
 cat tmp/exceptions.tmp | awk '{print "  - DOMAIN,"$1}' | sed -e 's///gm' >>option/hostsVN-clash-rule.yaml
 cat tmp/adservers.tmp tmp/adservers-all.tmp tmp/adservers-extra.tmp | awk '{print "  - DOMAIN-SUFFIX,"$1}' | sed -e 's///gm' >>option/hostsVN-clash-rule.yaml
@@ -62,6 +64,19 @@ echo '      ]
     }
   ]
 }' >>option/hostsVN-singbox-rule.json
+
+curl -o option/Advertising_Domain.txt -sSL https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Advertising/Advertising_Domain.txt
+
+echo '{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [' >option/Advertising_Domain.json
+cat option/Advertising_Domain.txt | grep -v '#' | grep -v -e '^[[:space:]]*$' | awk '{print "        \""$1"\","}' | sed -e 's///gm' | sed -e 's/\n//gm' | sed -e '$ s/,$//' | sed -e 's/\\/\\\\/gm' | sed -e 's/\//\\\//gm' >>option/Advertising_Domain.json
+echo '      ]
+    }
+  ]
+}' >>option/Advertising_Domain.json
 
 # remove tmp file
 rm -rf tmp/*.tmp
