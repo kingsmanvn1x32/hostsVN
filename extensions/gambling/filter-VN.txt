@@ -1,8 +1,8 @@
 ! Title: hostsVN Gambling
 ! Description: Only include gambling domains (Vietnamese language)
-! Last modified: 21 Jul 2024 22:13 UTC+7
-! Version: 2407212213
-! Blocked: 5,051 rules
+! Last modified: 06 Aug 2024 23:14 UTC+7
+! Version: 2408062314
+! Blocked: 5,087 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
 !
@@ -712,6 +712,7 @@
 ||app611.net^
 ||appbk8.com^
 ||appi9bet.com^
+||appstore.nosap.win^
 ||apptk.app^
 ||asiatop88.com^
 ||asiavwin.com^
@@ -739,6 +740,7 @@
 ||b52m.club^
 ||b52vn.info^
 ||b52vn.org^
+||b69.bar^
 ||b69.cafe^
 ||b69.city^
 ||b77.fun^
@@ -815,6 +817,7 @@
 ||bigk8th888.com^
 ||bj288.com^
 ||bj39.com^
+||bj88.games^
 ||bj88vietnam.com^
 ||bj88vn.com^
 ||bj988.com^
@@ -973,6 +976,7 @@
 ||choi.gamingsoc88.org^
 ||choi.playiwin.uk^
 ||choi77.com^
+||choi789.link^
 ||choi99.com^
 ||choibaionlinevn.com^
 ||choibancadoithuong.com^
@@ -1125,6 +1129,7 @@
 ||dangky.dailynet88.com^
 ||dangky.go88.com^
 ||dangky.thethaofb88.com^
+||dangky388bet.xyz^
 ||dangky789.link^
 ||dangky789.sbs^
 ||dangkybayvip.com^
@@ -1177,6 +1182,7 @@
 ||dk.thethaovua.co^
 ||dk.topcc88.me^
 ||dk.vaorikvip.net^
+||dk.zoplay.top^
 ||dk8.games^
 ||dk8.link^
 ||dk801.com^
@@ -1536,6 +1542,7 @@
 ||go88p.com^
 ||go88r.pro^
 ||go88s.tv^
+||go88tv.win^
 ||go88vn.live^
 ||go88vn.vip^
 ||go88x.club^
@@ -3153,6 +3160,7 @@
 ||kingman.fun^
 ||kingvip99.com^
 ||kkfffddd.com^
+||km.choi789.link^
 ||km.gamingsoc88.one^
 ||km.playmanclub.vin^
 ||km.thethaob52.org^
@@ -3287,6 +3295,7 @@
 ||lp.taiv8.top^
 ||lp.vip79.com^
 ||lp.vip79.uk^
+||lp.vip79.vip^
 ||lp.vip79gamebai.vip^
 ||lp.vuiuk88.club^
 ||lp.zo.club^
@@ -3655,6 +3664,7 @@
 ||nohu35.com^
 ||nohuk8.fun^
 ||nohuk8.info^
+||nosap.win^
 ||nowbetvn.com^
 ||nslokups.com^
 ||nt7cd.com^
@@ -3662,6 +3672,7 @@
 ||nxb8.com^
 ||oi8jg.com^
 ||ojr6n.com^
+||ok388.tv^
 ||okcado.com^
 ||okcado.org^
 ||okvip.life^
@@ -3761,13 +3772,16 @@
 ||play.loc789.club^
 ||play.manclub.vin^
 ||play.nemo.vin^
+||play.nosap.win^
 ||play.playiwin.biz^
 ||play.rik88.life^
 ||play.rikgame.live^
+||play.rikvip.services^
 ||play.rikvip.tv^
 ||play.sbotop246.com^
 ||play.son.club^
 ||play.son5.club^
+||play.sum27.club^
 ||play.sum4.club^
 ||play.sum5.club^
 ||play.taib52.com^
@@ -3777,6 +3791,7 @@
 ||play.vaob52.click^
 ||play.vic.win^
 ||play.vip79.com^
+||play.vip79.vip^
 ||play.vuigiaitri.online^
 ||play.win79.vip^
 ||play.win79d.com^
@@ -3868,6 +3883,7 @@
 ||qc.top88.uk^
 ||qc.top88.us^
 ||qc.top88.vn^
+||qc.vaobet.club^
 ||qc.vic.win^
 ||qc.x8.club^
 ||qc.x8.games^
@@ -3933,6 +3949,8 @@
 ||rikk.us^
 ||rikkk.net^
 ||rikvip.fun^
+||rikvip.property^
+||rikvip.services^
 ||rikvip.tv^
 ||rikvip.uk^
 ||rikvip.us^
@@ -3980,6 +3998,7 @@
 ||s999g.com^
 ||s999h.com^
 ||saigonbet.net^
+||sam86.zone^
 ||sam86vip.org^
 ||sam86vip.pro^
 ||sam86vip.tv^
@@ -3987,6 +4006,8 @@
 ||samvip.bet^
 ||sanos.fun^
 ||sanvip.club^
+||saowin.ink^
+||saowin.plus^
 ||sasa889.com^
 ||sbc2888.live^
 ||sbc31.com^
@@ -4122,8 +4143,11 @@
 ||su789.win^
 ||sukien.fcb88.com^
 ||sukiensh.online^
+||sum.club^
+||sum27.club^
 ||sum4.club^
 ||sum5.club^
+||sumclub1.xyz^
 ||sun.to^
 ||sun.win^
 ||sun13.win^
@@ -4131,7 +4155,9 @@
 ||sun15.win^
 ||sun52.bid^
 ||sun52.click^
+||sun52.cloud^
 ||sun52.fun^
+||sun52.link^
 ||sun52.live^
 ||sun52.site^
 ||sun52.tv^
@@ -4205,6 +4231,7 @@
 ||ta88.vip^
 ||tai-sumvip.city^
 ||tai.b52vn.fun^
+||tai.b69.bar^
 ||tai.boc8.fun^
 ||tai.do99.site^
 ||tai.fa88.win^
@@ -4228,6 +4255,7 @@
 ||tai.rikvip.us^
 ||tai.rikvip.vip^
 ||tai.rikvip.win^
+||tai.sam86.zone^
 ||tai.samvip.bet^
 ||tai.son.club^
 ||tai.taisum2.com^
@@ -4244,8 +4272,10 @@
 ||tai9606.com^
 ||tai99vin.net^
 ||taib29.cafe^
+||taib52.bet^
 ||taib52.club^
 ||taib52.com^
+||taib52.dev^
 ||taib52.vin^
 ||taib69.cafe^
 ||taiboc.fun^
@@ -4288,7 +4318,9 @@
 ||taimacao99.club^
 ||taimacao99.shop^
 ||taimacau.club^
+||taimanclub.app^
 ||taimanclub.com^
+||taimanvip.vip^
 ||tainbet.net^
 ||taiok88.app^
 ||taiqqlive.pro^
@@ -4309,6 +4341,7 @@
 ||taisum1.club^
 ||taisum2.com^
 ||taisumvip6.city^
+||taisun52.fun^
 ||taisun52.live^
 ||taisunwin.live^
 ||taitx1.club^
@@ -4539,6 +4572,7 @@
 ||vao789club.win^
 ||vao78win.xyz^
 ||vaob52.click^
+||vaobet.club^
 ||vaoku.net^
 ||vaorikvip.com^
 ||vaorikvip.net^
@@ -4595,6 +4629,7 @@
 ||vip130130.com^
 ||vip79.com^
 ||vip79.uk^
+||vip79.vip^
 ||vip79.win^
 ||vip79gamebai.vip^
 ||vipbet001.org^
@@ -5054,6 +5089,7 @@
 ||zo2.win^
 ||zo88.org^
 ||zom8.club^
+||zoplay.top^
 ||zowinvn.vip^
 ||ztij6.com^
 ||zvhlv.com^

@@ -1,7 +1,7 @@
 # Title: hostsVN Threat
-# Last modified: 21 Jul 2024 22:13 UTC+7
-# Version: 2407212213
-# Blocked: 4,575 domains
+# Last modified: 06 Aug 2024 23:14 UTC+7
+# Version: 2408062314
+# Blocked: 4,578 domains
 # Only include threat domains
 # Homepage: https://bigdargon.github.io/hostsVN/
 # GitHub: https://github.com/bigdargon/hostsVN
@@ -2315,6 +2315,7 @@
 0.0.0.0 quydoichuyenkhoanquocte.weebly.com
 0.0.0.0 quydoitienquocte24h7azx.weebly.com
 0.0.0.0 quytiente.com
+0.0.0.0 r01lacou.azidp.tech
 0.0.0.0 rategicstrai.cfd
 0.0.0.0 re0y7d.cyou
 0.0.0.0 reallkeys.com
@@ -3431,6 +3432,7 @@
 0.0.0.0 tracuugiaodichvi.com
 0.0.0.0 tracuugplx.vn
 0.0.0.0 tracuuthenap247.com
+0.0.0.0 tracuutthvt.com
 0.0.0.0 traderviet88.com
 0.0.0.0 traffic-c.com
 0.0.0.0 trang-chu-vn.com
@@ -4573,6 +4575,7 @@
 0.0.0.0 ynefefyopqvu.com
 0.0.0.0 youtuber-cash.buzz
 0.0.0.0 yunduofei.xyz
+0.0.0.0 zSmhlV.zgbv.tech
 0.0.0.0 zalorashop.com
 0.0.0.0 zeroshop.cc
 0.0.0.0 zingmp3.pro
